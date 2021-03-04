@@ -1,0 +1,72 @@
+@charset "UTF-8";
+
+body {
+
+}
+
+main {
+  margin: 0 auto;
+  color: #747474;
+  display: flex;
+  flex-direction: column;
+  background: #F8F8FF;
+  font-family: '游ゴシック', 'Yu Gothic', 'メイリオ', 'Meiryo';
+}
+
+main a {
+  text-decoration: none;
+  color: #747474;
+}
+.mypage-p{
+  padding-left: 50px;
+}
+
+main a:visited {
+  color: #747474;
+}
+
+.link {
+  position: relative;
+  background: #fff;
+  height: 36px;
+  margin: 25px 0 25px 0;
+  width: 500px;
+  font-size: 22px;
+}
+
+.linkwrap {
+  background: #DBD3F0;
+  width: 550px;
+  padding: 0 25px;
+}
+
+.title {
+  width: 300px;
+}
+
+.arrow {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  padding-left: 20px;
+}
+
+.arrow::before {
+  position: absolute;
+  content: '';
+  width: 15px;
+  height: 15px;
+  border: 0px;
+  border-top: solid 2px #94D6DA;
+  border-right: solid 2px #94D6DA;
+  -ms-transform: rotate(45deg);
+  -webkit-transform: rotate(45deg);
+  transform: rotate(45deg);
+  left: 0;
+
+}
+
+.link:hover {
+  background: #BAE3F9;
+  transition: .8s;
+}

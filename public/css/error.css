@@ -1,0 +1,66 @@
+@charset "UTF-8";
+body{
+  background-color: #F8F8FF;
+  font-family: '游ゴシック', 'Yu Gothic', 'メイリオ', 'Meiryo';
+}
+
+.wrap{
+  width:1100px;
+  margin: 0 auto;
+  color :#747474;
+}
+
+a{
+  text-decoration: none;
+  color: #747474;
+}
+a:visited{
+  color: #747474;
+}
+h1{
+  text-align: center;
+  margin: 0 auto;
+}
+
+.logo{
+  margin: 50px auto;
+  width: 350px;
+}
+
+.error{
+  margin: 0 auto;
+  width: 700px;
+}
+
+.back{
+  border:solid 1px #747474;
+  width: 230px;
+  height: 50px;
+  margin: 20px auto;
+  font-size: 20px;
+  border-radius: 50px;
+
+}
+
+.back p{
+  text-align: center;
+  padding: 8px 0;
+}
+
+.back:hover{
+  transform: scale(1.05);
+}
+
+a:visited{
+  background-color: none;
+}
+
+.error_message{
+  text-align: center;
+  font-size: 20px;
+}
+
+h2{
+  text-align: center;
+  font-weight: 500;
+}

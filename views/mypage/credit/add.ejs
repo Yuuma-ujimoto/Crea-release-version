@@ -1,0 +1,50 @@
+<!doctype html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>crea</title>
+    <link rel="stylesheet" href="/css/base.css">
+
+</head>
+<body>
+<%- include("../../base/header") %>
+<main>
+    <form action="./check" method="post">
+        <dl>
+            <dt>
+                <label for="credit_number">カード番号</label>
+            </dt>
+            <dd>
+                <input type="text" name="credit_number" id="credit_number">
+            </dd>
+            <dt>
+                <label for="month">month</label>
+            </dt>
+            <dd>
+                <input id="month" name="month" type="number" max="12" min="1">
+            </dd>
+            <dt>
+                <label for="year">year</label>
+            </dt>
+            <dd>
+                <input id="year" name="year" type="number" max="99" min="1">
+            </dd>
+            <dt>
+                <label for="security_code">セキュリティコード</label>
+            </dt>
+            <dd>
+                <input type="text" name="security_code" id="security_code">
+            </dd>
+            <dd>
+                <button type="submit">登録</button>
+            </dd>
+        </dl>
+    </form>
+</main>
+<%- include("../../base/footer") %>
+
+</body>
+</html>

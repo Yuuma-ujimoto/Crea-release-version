@@ -1,0 +1,203 @@
+
+
+#header-wrapper {
+    font-family: "游ゴシック", "UD デジタル 教科書体 NP-B", "メイリオ", sans-serif;
+    width: 1100px;
+    margin-right: auto;
+    margin-left : auto;
+    font-size: 100%;
+    /*background-color: #f8f8ff;*/
+}
+
+.header_nav-list li {
+    text-align: center;
+    position: relative;
+    font-weight: bolder;
+    width: 180px;
+    height: 38px;
+    padding: 1.2em 0.6em 1.2em 0.6em;
+    margin-bottom: auto;
+    margin-top: auto;
+    vertical-align: middle;
+    color: #505050;
+    box-sizing: content-box;
+}
+/* ■ ヘッダー全体（header系） */
+header {
+    height: 150px;
+    width: 100%;
+    padding: 15px 0;
+    color: white;
+}
+header .header_headline{
+    line-height: 100px;
+    float: left;
+    font-size: 50px;
+    margin-left: 0px;
+}
+.header_logo {
+    width: 275px;
+    position:absolute;
+    top: 1px;
+    margin-left: 0px;
+
+}
+
+/* ■ ログイン・カート */
+.header_login, .header_cart{
+    border-radius: 12px;
+    position:absolute;
+    height: 60px;
+    top: 5px;
+    transition-delay: 0.4s;
+    /* ここでtransitionするとhover後もふんわりするけど、F5した時に左から移動してくるからじわる */
+}
+.header_login {
+    color: #fff;
+    background-color: #D0EBFB;
+    width: 170px;
+    margin-left: 820px;
+    display: inline-block;
+    text-decoration: none;
+}
+.header_cart{
+    width: 60px;
+    margin-left: 1000px;
+}
+.header_login:hover, .header_cart:hover{
+    /* hover離したときもふんわり色が変わるようにしたい */
+}
+.header_login:hover{
+    background-color: #b5e1eb;
+    color: #fff;
+}
+.header_cart:hover{
+    opacity: 0.5;
+}
+
+.header_a{
+    /* ブロック要素の並び・文字色・文字色変化をなめらかに・フォントを太く */
+    display: block;
+    color: black;
+    font-weight:bolder;
+    text-decoration: none;
+}
+/* 重複してんのなんで？ */
+.header_login{
+    /* ブロック要素の並び・文字色・文字色変化をなめらかに・フォントを太く */
+    display: block;
+    color: black;
+    font-weight:bolder;
+}
+.header_login p{
+    /* 枠内文字中央寄せ・行の高さ・文字色・フォントを太く */
+    text-align:center;
+    line-height:60px;
+    color: #000000;
+    font-weight: bolder;
+}
+
+/* ■ 検索欄 */
+#header_form02{
+    position:absolute;
+    background-color: white;
+    width: 530px;
+    height: 45px;
+    border: 1px black solid;
+    margin-left: 270px;
+    top: 12px;
+    border-radius: 22px;
+}
+#header_form02 input{
+    vertical-align: top;
+    margin: 0px;
+    height: 100%;
+    box-sizing: border-box;
+    background-color: transparent;
+}
+#header_input02{
+    outline:0;
+    border: none;
+    width: 530px;
+    height: 45px;
+    padding-left: 20px;
+    padding-right: 20px;
+    border-radius: 22px;
+}
+
+/* ■ メニュー欄（header_nav系） */
+.header_nav-list-item1, .header_nav-list-item2, .header_nav-list-item3{
+    margin: 0px;
+    border-top: solid 1px #000;
+    border-bottom: solid 1px #000;
+    background: #DBD3F0;
+}
+.header_nav-list-item1:hover,
+.header_nav-list-item2:hover,
+.header_nav-list-item3:hover{
+    /* background-color: rgba(186, 227, 249, 0.65); */
+    background-color: #D0EBFB;
+    transition: 0.3s;
+}
+.header_nav-list {
+    display: flex;
+    line-height: 100px;
+    float: left;
+    margin-top: 60px;
+    margin-left: 270px;
+    list-style: none;
+}
+.header_nav-list-item1 {
+    color: #333333;
+    width: 200px;
+    height: 75px;
+    list-style: none;
+    display: inline-block;
+    border-left: solid 1px #000;
+    border-right: solid 1px #000;
+    border-radius: 10px 0px 0px 10px;
+}
+.header_nav-list-item2 {
+    color: #333333;
+    width: 200px;
+    height: 75px;
+    list-style: none;
+    display: inline-block;
+    border-right: solid 1px #000;
+}
+.header_nav-list-item3 {
+    color: #333333;
+    width: 200px;
+    height: 75px;
+    list-style: none;
+    border-right: solid 1px #000;
+    border-radius: 0px 10px 10px 0px;
+}
+.header_nav-list-item1 a{
+    position: absolute;
+    top: 0; /* ③ */
+    left: 0; /* ④ */
+    width: 100%; /* ⑤ */
+    height: 100%; /* ⑥ */
+    text-align: center;
+    line-height: 75px;
+}
+.header_nav-list-item2 a{
+    position: absolute;
+    top: 0; /* ③ */
+    left: 0; /* ④ */
+    width: 100%; /* ⑤ */
+    height: 100%; /* ⑥ */
+    text-align: center;
+    line-height: 75px;
+}
+.header_nav-list-item3 a{
+    position: absolute;
+    top: 0; /* ③ */
+    left: 0; /* ④ */
+    width: 100%; /* ⑤ */
+    height: 100%; /* ⑥ */
+    text-align: center;
+    line-height: 75px;
+}
+

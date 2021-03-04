@@ -1,0 +1,79 @@
+@charset "UTF-8";
+
+body {
+  font-family: '游ゴシック', 'Yu Gothic', 'メイリオ', 'Meiryo';
+  background: #F8F8FF;
+}
+
+main {
+  width: 1100px;
+  margin: 20px auto;
+  color: #747474;
+  background: #F8F8FF;
+  font-family: '游ゴシック', 'Yu Gothic', 'メイリオ', 'Meiryo';
+}
+
+main .wrap {
+  margin: 0 auto;
+  width: 1100px;
+  background-color: #DBD3F0;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+}
+
+main .contents {
+  position: relative;
+  width: 450px;
+  height: 500px;
+  border: solid 1px #747474;
+  background-color: #fff;
+  margin-bottom: 20px;
+}
+
+main .contents img {
+  width: 400px;
+  text-align: center;
+  height: auto;
+}
+
+main a {
+  text-decoration: none;
+}
+
+main .button {
+  position: absolute;
+  bottom: 10px;
+  left: 0;
+  right: 0;
+  margin: auto;
+  border: solid 1px #747474;
+  width: 200px;
+  height: 70px;
+  font-size: 25px;
+  border-radius: 45px;
+
+
+}
+main .button:hover{
+    transform: scale(1.1);
+}
+
+main .button p {
+  text-align: center;
+  line-height: 70px;
+}
+
+main a:hover{
+  color: #747474;
+}
+main a:visited{
+  color: #747474;
+}
+
+main h2{
+  width: 1100px;
+  font-size: 26px;
+  margin-bottom: 20px;
+  text-align: center;
+}

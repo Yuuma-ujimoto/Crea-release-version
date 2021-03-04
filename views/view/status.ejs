@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="ja">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+    <title>Crea/</title>
+    <!-- MDB icon -->
+    <link rel="icon" href="/bootstrap/img/crea_favicon.png" type="image/x-icon">
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.11.2/css/all.css">
+    <!-- Google Fonts Roboto -->
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700&display=swap">
+    <!-- Bootstrap core CSS -->
+    <link rel="stylesheet" href="/bootstrap/css/bootstrap.min.css">
+    <!-- Material Design Bootstrap -->
+    <link rel="stylesheet" href="/bootstrap/css/mdb.min.css">
+    <!-- Your custom styles (optional) -->
+    <link rel="stylesheet" href="/bootstrap/css/style.css">
+
+
+    <script src="/bootstrap/js/jquery1.js"></script>
+    <script src="/ajax/view/get_status.js"></script>
+    <script src="/ajax/view/comment.js"></script>
+    <script src="/ajax/view/status_add_cart.js"></script>
+    <script src="/ajax/view/ajax_good_status.js"></script>
+</head>
+
+<body>
+<input type="hidden" value="<%- post_id %>" id="post_id">
+<input type="hidden" value="" id="customize_id">
+<!-- Start your project here-->
+
+<%- include("../base/header") %>
+
+<div class="container mt-5">
+
+
+    <!--Section: Content-->
+    <section class="dark-grey-text">
+
+
+        <!-- Grid row -->
+        <div class="row align-items-center">
+
+            <!-- Grid column -->
+            <div class="col-lg-5">
+
+                <!-- Featured image -->
+                <div class="view overlay rounded z-depth-1 mb-lg-0 mb-4">
+                    <img class="img-fluid" src="/bootstrap/img/omote.png" alt="Sample image" id="bigimg">
+                    <a>
+                        <div class="mask rgba-white-slight"></div>
+                    </a>
+                </div>
+
+                <div class="row mt-5 offset-2">
+                    <div class="col-4">
+                        <img class="img-fluid" id="img1" src="/bootstrap/img/omote.png" alt="Sample image">
+                    </div>
+                    <div class="col-4">
+                        <img class="img-fluid" id="img2" src="/bootstrap/img/ura.png" alt="Sample image">
+                    </div>
+                </div>
+
+            </div>
+            <!-- Grid column -->
+
+            <!-- Grid column -->
+            <div class="col-lg-7 pl-5">
+
+                <div class="container" id="result">
+                    <div class="row">
+                        <div class="col-6 offset-1">
+                            <!-- Post title -->
+                            <h4 class="font-weight-bold mb-3"><strong id="post_title"></strong></h4>
+                            <!-- Excerpt -->
+                            <p>製作者:<a id="post_user_name" href="#"></a></p>
+                            <!-- Post data -->
+                            <p id="post_content"></p>
+                        </div>
+                    </div>
+                    <div class="row ">
+
+                        <div class="mt-2">
+                            <a class="ml-5 pl-2">
+                                <i class="far fa-heart fa-2x mx-2 align-middle" style="color: #78909C;" id="good-button"></i>
+                            </a>
+
+                        </div>
+                        <!-- Read more button -->
+                        <a id="remake" href="" class="btn btn-blue-grey btn-md btn-rounded mx-2 w-25">再編集</a>
+                        <a id="add-cart" class="btn btn-blue-grey btn-md btn-rounded mx-0 w-25">購入</a>
+                    </div>
+                </div>
+
+            </div>
+            <!-- Grid column -->
+
+        </div>
+        <!-- Grid row -->
+
+    </section>
+    <!--Section: Content-->
+
+
+</div>
+
+
+<div class="container mt-5 pt-5 pb-3 ">
+    <h4 class="font-weight-bold mb-3"><strong>コメント欄</strong></h4>
+    <hr>
+    <!--Section: Content-->
+    <section class="dark-grey-text ">
+        <div class="row">
+            <div class="input-group my-3">
+                <input id="comment-input" type="text" class="form-control" placeholder="コメントを入力" aria-label="" aria-describedby="button-addon2">
+                <div class="input-group-append">
+                    <button class="btn btn-md btn-blue-grey rounded-right m-0 px-3 py-2 z-depth-0 waves-effect" type="submit" id="button-addon2">送信</button>
+                </div>
+            </div>
+        </div>
+        <div id="comment-result">
+
+        </div>
+    </section>
+    <!--Section: Content-->
+</div>
+
+<!--footer表示用-->
+</body>
+
+<script type="text/javascript">
+    $(document).ready(function () {
+        $('#img1').on('click', function () {
+            var src = $(this).attr('src');
+            $('#bigimg').attr('src', src);
+
+        })
+        $('#img2').on('click', function () {
+            var src = $(this).attr('src');
+            $('#bigimg').attr('src', src);
+
+        })
+    });
+</script>
+
+
+<%- include("../base/footer") %>
+
+<!-- End your project here-->
+
+<!-- jQuery -->
+<script type="text/javascript" src="/bootstrap/js/jquery.min.js"></script>
+<!-- Bootstrap tooltips -->
+<script type="text/javascript" src="/bootstrap/js/popper.min.js"></script>
+<!-- Bootstrap core JavaScript -->
+<script type="text/javascript" src="/bootstrap/js/bootstrap.min.js"></script>
+<!-- MDB core JavaScript -->
+<script type="text/javascript" src="/bootstrap/js/mdb.min.js"></script>
+<!-- Your custom scripts (optional) -->
+<script type="text/javascript"></script>
+
+</body>
+
+</html>

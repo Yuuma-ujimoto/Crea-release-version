@@ -1,0 +1,26 @@
+.post-wrapper{
+    display: flex;
+    justify-content: center;
+}
+.post-image-wrapper{
+    display: flex;
+    justify-content: space-around;
+}
+.post-image{
+    width: 300px;
+}
+
+
+.post-reply-wrapper{
+    display: flex;
+    justify-content: center;
+}
+
+
+.post-box{
+    width: 80%;
+}
+.comment-wrapper{
+    display: flex;
+    justify-content: center;
+}

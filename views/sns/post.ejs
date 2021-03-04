@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="ja">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <meta http-equiv="x-ua-compatible" content="ie=edge">
+  <title>Crea/SNS投稿画面</title>
+  <!-- MDB icon -->
+  <link rel="icon" href="/bootstrap/img/crea_favicon.png" type="image/x-icon">
+  <!-- Font Awesome -->
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.11.2/css/all.css">
+  <!-- Google Fonts Roboto -->
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700&display=swap">
+  <!-- Bootstrap core CSS -->
+  <link rel="stylesheet" href="/bootstrap/css/bootstrap.min.css">
+  <!-- Material Design Bootstrap -->
+  <link rel="stylesheet" href="/bootstrap/css/mdb.min.css">
+  <!-- Your custom styles (optional) -->
+  <link rel="stylesheet" href="/bootstrap/css/style.css">
+</head>
+
+<body>
+
+  <!-- Start your project here-->
+  <%-include("../base/header")%>
+
+  <div class="container my-5">
+
+    <!-- Section -->
+    <section class="dark-grey-text text-center">
+
+
+      <h3 class="font-weight-bold black-text mb-4 pb-2">SNS投稿画面</h3>
+
+
+      <!--First row-->
+      <div class="row d-flex justify-content-center">
+
+        <!--First column-->
+        <div class="col-6">
+          <div class="container">
+            <div class="row ">
+              <div class="col-md-6 mb-3">
+                <img class="img-fluid view overlay z-depth-1" src="https://s3-ap-northeast-1.amazonaws.com/crea-test-bucket/public/<%-result[0].front_image_path%>" alt="">
+              </div>
+
+              <div class="col-md-6 ">
+                <img class="img-fluid view overlay z-depth-1" src="https://s3-ap-northeast-1.amazonaws.com/crea-test-bucket/public/<%-result[0].back_image_path%>" alt="">
+              </div>
+
+
+            </div>
+
+          </div>
+
+
+          <!-- Material outline input -->
+
+          <form method="post" action="/sns/check">
+          <div class="md-form md-outline form-lg">
+            <input type="text" id="form1" name="post_title" class="form-control form-control-lg">
+            <label for="form1">タイトル</label>
+          </div>
+
+          <!-- Material outline input -->
+          <div class="md-form md-outline form-lg">
+          <!-- <input type="text" id="form2"size="25" class="form-control form-control-lg" style="height:150px;text-align:left"> -->
+          <textarea id="form2" name="post_content" rows="8" cols="65" class="md-textarea form-control form-control-lg"></textarea>
+            <label for="form2">説明</label>
+          </div>
+          <input type="hidden" name="customize_id" value="<%- customize_id %>">
+          <button class="btn btn-block btn-blue-grey btn-lg mb-4">送信</button>
+          </form>
+
+
+
+        </div>
+        <!--First column-->
+
+      </div>
+      <!--First row-->
+
+    </section>
+    <!-- Section -->
+
+  </div>
+
+
+  <%-include("../base/footer")%>
+
+  <!-- End your project here-->
+
+  <!-- jQuery -->
+  <script type="text/javascript" src="/bootstrap/js/jquery.min.js"></script>
+  <!-- Bootstrap tooltips -->
+  <script type="text/javascript" src="/bootstrap/js/popper.min.js"></script>
+  <!-- Bootstrap core JavaScript -->
+  <script type="text/javascript" src="/bootstrap/js/bootstrap.min.js"></script>
+  <!-- MDB core JavaScript -->
+  <script type="text/javascript" src="/bootstrap/js/mdb.min.js"></script>
+  <!-- Your custom scripts (optional) -->
+  <script type="text/javascript"></script>
+
+</body>
+
+</html>

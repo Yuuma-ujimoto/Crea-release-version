@@ -1,0 +1,42 @@
+<!doctype html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <link rel="stylesheet" href="/css/base.css">
+    <link rel="stylesheet" href="/css/inquiry.css">
+
+</head>
+<body>
+<%- include("../base/header") %>
+<main>
+    <h2>お問い合わせ</h2>
+    <form action="/inquiry/check" method="post">
+        <dl>
+            <dt>
+                <p>お問い合わせ要件(空白可)</p>
+            </dt>
+            <dd>
+                <input type="text" name="inquiry_title">
+            </dd>
+            <dt>
+                <p>お問い合わせ内容</p>
+            </dt>
+            <dd>
+                <input type="text" name="inquiry_body">
+            </dd>
+            <dd>
+                <button type="submit">送信</button>
+                <p>※返信はユーザーの登録してあるメールアドレスに送信されます。</p>
+                <p>送信後は自動的にトップページへと戻ります</p>
+            </dd>
+        </dl>
+    </form>
+</main>
+<%- include("../base/footer") %>
+
+</body>
+</html>

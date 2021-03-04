@@ -1,0 +1,23 @@
+@charset "UTF-8";
+
+.address-wrapper{
+    display: flex;
+    width: 1000px;
+    flex-wrap: wrap;
+}
+
+.address-box{
+    margin: 10px;
+    min-width: 480px;
+    height: 480px;
+    border: solid 1px #333333;
+    box-sizing: border-box;
+}
+.add-box{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.add-box>a{
+    font-size: 1.8rem;
+}

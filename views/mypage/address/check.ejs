@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="ja">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+    <title>Crea/発送先情報</title>
+    <!-- MDB icon -->
+    <link rel="icon" href="/bootstrap/img/crea_favicon.png" type="image/x-icon">
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.11.2/css/all.css">
+    <!-- Google Fonts Roboto -->
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700&display=swap">
+    <!-- Bootstrap core CSS -->
+    <link rel="stylesheet" href="/bootstrap/css/bootstrap.min.css">
+    <!-- Material Design Bootstrap -->
+    <link rel="stylesheet" href="/bootstrap/css/mdb.min.css">
+    <!-- Your custom styles (optional) -->
+    <link rel="stylesheet" href="/bootstrap/css/style.css">
+</head>
+
+<body>
+
+<!-- Start your project here-->
+<%-include("../../base/header")%>
+<div class="container my-5">
+
+
+    <!--Section: Content-->
+    <section class="dark-grey-text">
+
+        <!-- Section heading -->
+        <h3 class="text-center font-weight-bold mb-4 pb-2">発送先情報</h3>
+
+        <!--First row-->
+        <div class="row">
+
+            <!--First column-->
+            <div class="col-md-7 mb-4 mx-auto">
+
+                <!-- Card -->
+                <div class="card ">
+
+                    <!-- Card content -->
+                    <div class="card-body">
+
+                        <div class="media">
+                <span class="card-img-100 d-inline-flex justify-content-center align-items-center rounded-circle grey lighten-3 mr-4">
+                  <i class="fas fa-tenge fa-2x btext"></i>
+                </span>
+                            <div class="media-body">
+                                <h5 class="dark-grey-text mb-3">郵便番号</h5>
+                                <p class="font-weight-light text-muted mb-0 h3"><%- result.postal_code %></p>
+                            </div>
+                        </div>
+
+                    </div>
+
+                </div>
+                <!-- Card -->
+
+            </div>
+            <!--First column-->
+
+            <!--Second column-->
+            <div class="col-md-7 mb-4 mx-auto">
+
+                <!-- Card -->
+                <div class="card">
+
+                    <!-- Card content -->
+                    <div class="card-body">
+
+                        <div class="media">
+                <span class="card-img-100 d-inline-flex justify-content-center align-items-center rounded-circle grey lighten-3 mr-4">
+                  <i class="far fa-map fa-2x btext"></i>
+                </span>
+                            <div class="media-body">
+                                <h5 class="dark-grey-text mb-3">住所</h5>
+                                <p class="font-weight-light text-muted mb-0 h3"><%- result.address %></p>
+                            </div>
+                        </div>
+
+                    </div>
+
+                </div>
+                <!-- Card -->
+                <!-- Card -->
+
+            </div>
+            <!--Second column-->
+
+            <!--Second column-->
+            <div class="col-md-7 mb-4 mx-auto">
+
+                <!-- Card -->
+                <div class="card ">
+
+                    <!-- Card content -->
+                    <div class="card-body">
+
+                        <div class="media">
+                <span class="card-img-100 d-inline-flex justify-content-center align-items-center rounded-circle grey lighten-3 mr-4">
+                  <i class="fas fa-phone fa-2x btext"></i>
+                </span>
+                            <div class="media-body">
+                                <h5 class="dark-grey-text mb-3">電話番号</h5>
+                                <p class="font-weight-light text-muted mb-0 h3"><%- result.phone_number %></p>
+                            </div>
+                        </div>
+
+                    </div>
+
+                </div>
+                <!-- Card -->
+                <!-- Card -->
+
+            </div>
+            <!--Second column-->
+
+            <!--Second column-->
+            <div class="col-md-7 mb-4 mx-auto">
+
+                <!-- Card -->
+                <div class="card ">
+
+                    <!-- Card content -->
+                    <div class="card-body">
+
+                        <div class="media">
+                            <span class="card-img-100 d-inline-flex justify-content-center align-items-center rounded-circle grey lighten-3 mr-4">
+                              <i class="far fa-user fa-2x btext"></i>
+                            </span>
+                            <div class="media-body">
+                                <h5 class="dark-grey-text mb-3">受取人名義</h5>
+                                <p class="font-weight-light text-muted mb-0 h3"><%- result.address_name %></p>
+                            </div>
+                        </div>
+
+                    </div>
+
+                </div>
+                <!-- Card -->
+                <!-- Card -->
+
+            </div>
+            <!--Second column-->
+
+        </div>
+        <!--First row-->
+
+    </section>
+
+    <button class="btn btn-block btn-blue-grey btn-lg mb-4 col-7">変更</button>
+
+
+</div>
+
+
+<%- include("../../base/footer") %>
+
+<!-- End your project here-->
+
+<!-- jQuery -->
+<script type="text/javascript" src="/bootstrap/js/jquery.min.js"></script>
+<!-- Bootstrap tooltips -->
+<script type="text/javascript" src="/bootstrap/js/popper.min.js"></script>
+<!-- Bootstrap core JavaScript -->
+<script type="text/javascript" src="/bootstrap/js/bootstrap.min.js"></script>
+<!-- MDB core JavaScript -->
+<script type="text/javascript" src="/bootstrap/js/mdb.min.js"></script>
+<!-- Your custom scripts (optional) -->
+<script type="text/javascript"></script>
+
+</body>
+
+</html>

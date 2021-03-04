@@ -1,0 +1,43 @@
+@charset "UTF-8";
+
+body {
+  background: #F8F8FF;
+  font-family: '游ゴシック', 'Yu Gothic', 'メイリオ', 'Meiryo';
+}
+
+main {
+  width: 1100px;
+  height: auto;
+  margin: 0 auto;
+  color: #747474;
+}
+
+main table{
+  width: 700px;
+  margin: 0 auto;
+  border: solid 1px #747474;
+   border-collapse: separate;
+}
+
+main th{
+  border-bottom: solid 1px #747474;
+  text-align: left;
+  padding: 2px 0px;
+}
+
+main td{
+    border-bottom: solid 1px #747474;
+    font-size: 13px;
+    padding: 10px 0;
+
+}
+
+.q_none{
+  border: none;
+}
+
+main h2{
+  font-weight: 500;
+  text-align: center;
+  font-size: 22px;
+}

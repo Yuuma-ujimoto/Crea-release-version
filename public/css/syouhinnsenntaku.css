@@ -1,0 +1,86 @@
+@charset "UTF-8";
+
+body {
+  background-color: #F8F8FF;
+  font-family: '游ゴシック', 'Yu Gothic', 'メイリオ', 'Meiryo';
+}
+
+main {
+  width: 1100px;
+  margin: 20px auto;
+  color: #747474;
+}
+
+main h2 {
+  text-align: center;
+  margin-bottom: 30px;
+}
+
+main .senntaku_img img {
+  width: 300px;
+  border: solid 1px #D7C5DB;
+}
+
+main .senntaku_img {
+  width: 1100px;
+  display: inline-flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+}
+
+main .caption1, main .caption2, main .caption3 {
+  font-size: 130%;
+  text-align: center;
+  color: #fff;
+}
+
+main .contain1,main .contain2,main .contain3 {
+  width: 300px;
+  height: 300px;
+  overflow: hidden;
+  position: relative;
+}
+
+main .contain1 .mask1, main .contain2 .mask2, main .contain3 .mask3 {
+  width: 300px;
+  height: 300px;
+  position: absolute;
+  top: 0;
+  left: 0;
+  opacity: 0;
+  /* マスクを表示しない */
+  background-color: rgba(0, 0, 0, 0.4);
+  -webkit-transition: all 0.6s ease;
+  transition: all 0.6s ease;
+}
+
+main .contain1:hover .mask1 {
+  opacity: 1;
+  /* マスクを表示する */
+  padding-top: 120px;
+  /* ホバーで下にずらす */
+}
+
+main .contain2:hover .mask2 {
+  opacity: 1;
+  /* マスクを表示する */
+  padding-top: 120px;
+  /* ホバーで下にずらす */
+}
+
+main .contain3:hover .mask3 {
+  opacity: 1;
+  /* マスクを表示する */
+  padding-top: 120px;
+  /* ホバーで下にずらす */
+}
+
+main p {
+  font-size: 25px;
+  font-weight: bold;
+}
+
+main span {
+  font-size: 18px;
+  font-weight: 400;
+}

@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="ja">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+    <title>Crea/</title>
+    <!-- MDB icon -->
+    <link rel="icon" href="/bootstrap/img/crea_favicon.png" type="image/x-icon">
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.11.2/css/all.css">
+    <!-- Google Fonts Roboto -->
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700&display=swap">
+    <!-- Bootstrap core CSS -->
+    <link rel="stylesheet" href="/bootstrap/css/bootstrap.min.css">
+    <!-- Material Design Bootstrap -->
+    <link rel="stylesheet" href="/bootstrap/css/mdb.min.css">
+    <!-- Your custom styles (optional) -->
+    <link rel="stylesheet" href="/bootstrap/css/style.css">
+</head>
+
+<body>
+
+<!-- Start your project here-->
+<%-include("../base/header")%>
+
+<div class="container my-5">
+
+
+    <!--Section: Content-->
+    <section class="">
+
+        <!-- Section heading -->
+        <h3 class="text-center font-weight-bold mb-5">SNSに投稿したい画像を選択してください</h3>
+
+        <div class="row">
+
+            <%result.forEach(item=>{%>
+            <!--Grid column-->
+            <div class="col-md-6 mb-4">
+                <!--Card-->
+                <div class="card">
+
+                    <!--Card image-->
+                    <div class="view overlay">
+                        <img src="https://s3-ap-northeast-1.amazonaws.com/crea-test-bucket/public/<%-item.front_image_path%>" class="card-img-top" alt="">
+                        <a href="/sns/post/<%-item.id%>">
+                            <div class="mask rgba-white-slight waves-effect waves-light"></div>
+                        </a>
+                    </div>
+                    <!--/.Card image-->
+
+                    <!--Card content-->
+                    <div class="card-body">
+                        <!--Title-->
+                        <h4 class="card-title"><strong>投稿する。</strong></h4>
+                        <hr>
+                        <!--Text-->
+
+                        <p class="font-small grey-text mb-0"></p>
+                    </div>
+                    <!--/.Card content-->
+
+                </div>
+                <!--/.Card-->
+
+            </div>
+            <!--Grid column-->
+            <%})%>
+
+        </div>
+
+
+    </section>
+    <!--Section: Content-->
+
+
+</div>
+
+
+<%-include("../base/footer")%>
+
+<!-- End your project here-->
+
+<!-- jQuery -->
+<script type="text/javascript" src="/bootstrap/js/jquery.min.js"></script>
+<!-- Bootstrap tooltips -->
+<script type="text/javascript" src="/bootstrap/js/popper.min.js"></script>
+<!-- Bootstrap core JavaScript -->
+<script type="text/javascript" src="/bootstrap/js/bootstrap.min.js"></script>
+<!-- MDB core JavaScript -->
+<script type="text/javascript" src="/bootstrap/js/mdb.min.js"></script>
+<!-- Your custom scripts (optional) -->
+<script type="text/javascript"></script>
+
+</body>
+
+</html>
